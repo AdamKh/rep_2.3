@@ -15,7 +15,7 @@ if __name__ == '__main__':
         i += 1
     for i in range(len(s1)):
         for j in range(len(s1)-1):
-            if len(s1[j]) < len(s1[j+1]):
+            if len(s1[j]) < len(s1[j + 1]):
                 s1[j], s1[j + 1] = s1[j + 1], s1[j]
     s = ''
     for i in range(0, len(s1)):
