@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import re
-
 
 if __name__ == '__main__':
     s = input('Введите предложение:\n')
-    s1 = re.split(' ', s)
+    s1 = s.split()
     i = 0
     for i in range(len(s1)):
         for j in range(len(s1)-1):
