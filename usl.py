@@ -5,14 +5,9 @@ import re
 
 
 if __name__ == '__main__':
-    s = input('Введите предложение\n')
-    s1 = re.split(' |,|[.]', s)
+    s = input('Введите предложение:\n')
+    s1 = re.split(' ', s)
     i = 0
-    while i < len(s1):
-        if s1[i] == '':
-            del s1[i]
-            continue
-        i += 1
     for i in range(len(s1)):
         for j in range(len(s1)-1):
             if len(s1[j]) < len(s1[j + 1]):
